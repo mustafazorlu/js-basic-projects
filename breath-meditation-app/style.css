@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.questions-box {
+  color: #4E66A9;
+  padding: 32px;
+  background-color: white;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.questions-box .range-bar-box {
+  margin-bottom: 42px;
+}
+
+.questions-box .range-bar-box .range-bar-title span {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+  font-size: 17px;
+  color: #3e5186;
+}
+
+.questions-box .range-bar-box .range-bar {
+  width: 100%;
+  background-color: #eee;
+  height: 8px;
+  border-radius: 200px;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.questions-box .range-bar-box .range-bar-texts span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5abac8;
+  text-align: right;
+}
+
+.questions-box .question-box {
+  padding: 24px;
+  background-color: #f2f4f8;
+  border-radius: 16px;
+}
+
+.questions-box .question-box .question {
+  margin-bottom: 24px;
+}
+
+.questions-box .question-box .question span {
+  display: block;
+  font-weight: 500;
+}
+
+.questions-box .question-box .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.questions-box .question-box .answers .answers-box {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 110px;
+  padding: 10px 0;
+  margin-right: 10px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.questions-box .question-box .answers .answers-box:last-child {
+  margin-right: 0;
+}
+
+.questions-box .question-box .answers .answers-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.questions-box .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.questions-box .button-box .skip-btn {
+  display: block;
+  padding: 10px 30px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  background-color: #4E66A9;
+}
+
+.questions-box .button-box .skip-btn:hover {
+  background-color: #6e83bc;
+}
+
+.questions-box .selected-answer {
+  background-color: darkblue !important;
+  color: #ffffff;
+}
+
+.questions-box .displayNone {
+  display: none;
+}
+
+.questions-box .displayBlock {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  background: url("image/ocean.png");
+  background-size: cover;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+body .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+body .input label {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+body .input select {
+  border: none;
+  border-radius: 8px;
+  min-width: 300px;
+  font-size: 16px;
+  padding: 8px 4px;
+  background-color: #6236ff;
+  color: #ffffff;
+}
+
+body .input select:focus {
+  outline: none;
+}
+
+body .circle-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+body .circle-wrap .circle-outline {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 15px solid #f1f1f1;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body .circle-wrap .circle-progress {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #6236ff;
+  border-radius: 50%;
+  -webkit-transition: 4s ease all;
+  transition: 4s ease all;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body .breaths {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+body .instructions {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+body button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #6236ff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body .button-inactive {
+  pointer-events: none;
+  background-color: #969696;
+}
+
+body .circle-grow {
+  -webkit-transform: scale(5.3);
+          transform: scale(5.3);
+}
+/*# sourceMappingURL=style.css.map */

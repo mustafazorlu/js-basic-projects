@@ -1,0 +1,31 @@
+.btn{
+    padding:0;
+    border:none;
+    outline: none;
+    font-size: 1.8rem;
+    &.btn--edit{
+        color :green;
+    }
+    &.btn--delete{
+        color :red;
+    }
+}
+
+.bilgi{
+    margin:1rem 0;
+    padding:1rem;
+    border-radius: 4px;
+    opacity:0;
+    &.bilgi--success{
+        border:2px solid green;
+        opacity:1;
+    }
+    &.bilgi--error{
+        border:2px solid red;
+        opacity:1;
+    }
+}
+
+.far{
+    pointer-events: none;
+}

@@ -1,0 +1,21 @@
+{
+    "kisiler":[
+        {
+            "isim":"Mustafa",
+            "soyisim":"Zorlu",
+            "yas":21,
+            "dogumYeri":"Kilis"
+        },
+        {
+            "isim":"Habibe",
+            "soyisim":"Zorlu",
+            "yas":21,
+            "dogumYeri":"İzmir"
+        }
+    ],
+    "meslekler":
+    [
+        "Bilgisayar Mühendisliği",
+        "Eczacılık"
+    ]
+}

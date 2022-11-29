@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.container header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.container header h3 {
+  margin: 2rem 0;
+  font-weight: 300;
+}
+
+.container header #start {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: 0;
+  background-color: #83df83;
+}
+
+.container header #start:hover {
+  background-color: #72e272;
+}
+
+.container .game_container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  border-radius: 100px;
+}
+
+.container .game_container .toprak {
+  position: relative;
+  width: 27%;
+  height: 6rem;
+  margin: 3rem 1rem;
+}
+
+.container .game_container .toprak::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("toprak.png") center no-repeat;
+  background-size: cover;
+}
+
+.container .game_container .toprak .kostebek {
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  height: 6rem;
+  background: url("kostebek.png") no-repeat center;
+  background-size: contain;
+}
+
+.container .game_container .toprak .kostebek.secilen {
+  top: -2.2rem;
+}
+/*# sourceMappingURL=style.css.map */

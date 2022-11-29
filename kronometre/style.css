@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1rem;
+}
+
+.container form label #secilen_dakika,
+.container form label #secilen_saniye {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container #baslat,
+.container #sifirla {
+  width: 150px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #3fb859;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container #baslat:hover {
+  background-color: #2fcf52;
+}
+
+.container #sifirla {
+  background-color: #b83f3f;
+}
+
+.container #sifirla:hover {
+  background-color: #eb3f3f;
+}
+/*# sourceMappingURL=style.css.map */
